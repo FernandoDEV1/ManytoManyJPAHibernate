@@ -10,6 +10,10 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ * Custom serializer example for Groups
+ * see answer -> https://stackoverflow.com/questions/41407921/eliminate-circular-json-in-java-spring-many-to-many-relationship
+ * */
 public class CustomUserSerializer extends StdSerializer<Set<User>> {
 
     public CustomUserSerializer() {

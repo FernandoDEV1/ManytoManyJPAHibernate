@@ -12,6 +12,7 @@ import java.util.Set;
 
 /*
 * Custom serializer example for Groups
+* see answer -> https://stackoverflow.com/questions/41407921/eliminate-circular-json-in-java-spring-many-to-many-relationship
 * */
 public class CustomGroupSerializer extends StdSerializer<Set<Group>>{
 
