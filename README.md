@@ -6,7 +6,7 @@ Project example of many to many relationship implementation in Spring Boot using
 
 
 
-###Defining the user entity
+### Defining the user entity
 ```java
 
 @Entity
@@ -37,7 +37,7 @@ public class User {
 ```
 
 
-###Defining the group entity
+### Defining the group entity
 ```java
 
 @Entity
@@ -97,9 +97,9 @@ public class Group {
 
 ```
 
-###Custom serializer annotation
+### Custom serializer annotation
 
-Serilializer obtained by this answer ---> [Answer](https://stackoverflow.com/questions/41407921/eliminate-circular-json-in-java-spring-many-to-many-relationship)
+Serializer obtained by this answer ---> [Answer](https://stackoverflow.com/questions/41407921/eliminate-circular-json-in-java-spring-many-to-many-relationship)
 ```java
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "group_user_mapping",
@@ -109,9 +109,9 @@ Serilializer obtained by this answer ---> [Answer](https://stackoverflow.com/que
     private Set<User> users = new HashSet<>();
 ```
 
-###Json get request with serializer
-####Formatted json objects
-#####User
+### Json get request with serializer
+#### Formatted json objects
+##### User
 ```json
 {
         "idUser": 4,
@@ -124,7 +124,7 @@ Serilializer obtained by this answer ---> [Answer](https://stackoverflow.com/que
         ]
     }
 ```
-#####Group
+##### Group
 ```json
 {
   "idGroup": 10,
